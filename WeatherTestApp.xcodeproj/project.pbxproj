@@ -57,11 +57,19 @@
 				CDE9240F24AF671E0085214C /* AppDelegate.swift */,
 				CDE9241324AF671E0085214C /* ViewController.swift */,
 				CDE9241524AF671F0085214C /* Main.storyboard */,
+				CDE9242324AF68150085214C /* Supported files */,
+			);
+			path = WeatherTestApp;
+			sourceTree = "<group>";
+		};
+		CDE9242324AF68150085214C /* Supported files */ = {
+			isa = PBXGroup;
+			children = (
 				CDE9241824AF67230085214C /* Assets.xcassets */,
 				CDE9241A24AF67230085214C /* LaunchScreen.storyboard */,
 				CDE9241D24AF67230085214C /* Info.plist */,
 			);
-			path = WeatherTestApp;
+			path = "Supported files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +290,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N9G45L7Z6;
-				INFOPLIST_FILE = WeatherTestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherTestApp/Supported files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N9G45L7Z6;
-				INFOPLIST_FILE = WeatherTestApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeatherTestApp/Supported files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
