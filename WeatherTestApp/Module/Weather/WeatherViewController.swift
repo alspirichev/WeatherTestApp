@@ -34,6 +34,8 @@ class WeatherViewController: UIViewController, ViewSpecificController {
 
 extension WeatherViewController: WeatherUIProtocol {
     func show(error: NetworkService.Error) {
+        view().isShowActivityIndicator = false
+        
         let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""),
                                       message: error.localizedDescription,
                                       preferredStyle: .alert)
