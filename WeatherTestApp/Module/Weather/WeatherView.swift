@@ -21,6 +21,8 @@ class WeatherView: UIView {
     @IBOutlet weak private var weatherDescriptionLabel: UILabel!
     @IBOutlet weak private var temperatureLabel: UILabel!
     
+    private var temperature: Double!
+    
     // MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +32,17 @@ class WeatherView: UIView {
         commentLabel.text = ""
         weatherDescriptionLabel.text = ""
         temperatureLabel.text = ""
+    }
+    
+    @IBAction func convertToFahrenheit(_ sender: UISwitch) {
+        switch sender.isOn {
+            case true:
+                let fahrenheitTemperature = (temperature - 32) * 5 / 9
+                temperatureLabel.text = String(format: NSLocalizedString("%.f℉", comment: ""), fahrenheitTemperature)
+            
+            case false:
+                temperatureLabel.text = String(format: "%.f°", temperature)
+        }
     }
     
     // MARK: - Setup view
@@ -47,6 +60,8 @@ class WeatherView: UIView {
     }
     
     func update(with weather: Weather) {
+        self.temperature = weather.temperature
+        
         cityLabel.text = weather.city
         countryLabel.text = weather.country
         weatherDescriptionLabel.text = weather.description
