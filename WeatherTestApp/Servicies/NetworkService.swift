@@ -14,6 +14,11 @@ class NetworkService {
     private let secretApiKey = ""
     
     func weather(for cityId: Int, completion: @escaping (Result<Weather, Error>) -> Void) {
+        guard !secretApiKey.isEmpty else {
+            completion(.failure(.apiKeyIsMissing))
+            return
+        }
+        
         let urlString = "https://api.openweathermap.org/data/2.5/weather?id=\(cityId)&appid=\(secretApiKey)&units=metric"
         
         guard let url = URL(string: urlString) else {
@@ -44,6 +49,7 @@ extension NetworkService {
         case badUrl
         case network
         case dataCorrupted
+        case apiKeyIsMissing
         
         var errorDescription: String? {
             localizedDescription
@@ -59,6 +65,9 @@ extension NetworkService {
                 
                 case .dataCorrupted:
                     return "Invalid data format"
+                
+                case .apiKeyIsMissing:
+                return "Insert your API key"
             }
         }
     }
