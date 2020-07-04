@@ -18,8 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         
         let storyboard = UIStoryboard(name: "WeatherViewController", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "WeatherViewController")
-        window.rootViewController = initialViewController
+        let weatherViewController = storyboard.instantiateViewController(withIdentifier: "WeatherViewController") as! WeatherViewController
+        
+        let presenter = WeatherPresenter(ui: weatherViewController)
+        weatherViewController.presenter = presenter
+        
+        
+        window.rootViewController = weatherViewController
         
         self.window = window
         window.makeKeyAndVisible()

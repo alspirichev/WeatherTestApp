@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U.S" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-Ir-zUT">
-                                <rect key="frame" x="20" y="159" width="374" height="34.5"/>
+                                <rect key="frame" x="20" y="154" width="374" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -38,13 +38,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mist" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er3-Bw-Rux">
-                                <rect key="frame" x="50" y="633" width="314" height="41"/>
+                                <rect key="frame" x="50" y="643" width="314" height="41"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-oc-pPT">
-                                <rect key="frame" x="20" y="293.5" width="374" height="34.5"/>
+                                <rect key="frame" x="20" y="288.5" width="374" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                             <constraint firstItem="Saw-g9-0D4" firstAttribute="bottom" secondItem="wT1-oF-fsX" secondAttribute="bottom" constant="50" id="CIi-Oi-ymS"/>
                             <constraint firstItem="er3-Bw-Rux" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Oy4-oc-pPT" secondAttribute="bottom" constant="20" id="JHz-vX-jIm"/>
                             <constraint firstAttribute="bottom" secondItem="ZBt-WV-nJB" secondAttribute="bottom" id="M4t-fP-AA5"/>
-                            <constraint firstItem="uLD-Ir-zUT" firstAttribute="top" secondItem="Vw2-Gq-SbS" secondAttribute="bottom" constant="10" id="NKD-fa-Eti"/>
+                            <constraint firstItem="uLD-Ir-zUT" firstAttribute="top" secondItem="Vw2-Gq-SbS" secondAttribute="bottom" constant="5" id="NKD-fa-Eti"/>
                             <constraint firstItem="uLD-Ir-zUT" firstAttribute="leading" secondItem="Vw2-Gq-SbS" secondAttribute="leading" id="QUG-u7-32w"/>
                             <constraint firstItem="Vw2-Gq-SbS" firstAttribute="leading" secondItem="Saw-g9-0D4" secondAttribute="leading" constant="20" id="UEO-gB-jt3"/>
                             <constraint firstItem="Oy4-oc-pPT" firstAttribute="trailing" secondItem="Vw2-Gq-SbS" secondAttribute="trailing" id="WaE-yi-2PT"/>
@@ -68,7 +68,7 @@
                             <constraint firstItem="Vw2-Gq-SbS" firstAttribute="centerX" secondItem="Saw-g9-0D4" secondAttribute="centerX" id="fFd-QQ-mmm"/>
                             <constraint firstItem="ZBt-WV-nJB" firstAttribute="top" secondItem="QaB-ig-xwC" secondAttribute="top" id="m8B-qV-7Nc"/>
                             <constraint firstItem="Oy4-oc-pPT" firstAttribute="top" secondItem="uLD-Ir-zUT" secondAttribute="bottom" constant="100" id="pV6-yQ-ytv"/>
-                            <constraint firstItem="wT1-oF-fsX" firstAttribute="top" secondItem="er3-Bw-Rux" secondAttribute="bottom" constant="15" id="qo8-ST-qT6"/>
+                            <constraint firstItem="wT1-oF-fsX" firstAttribute="top" secondItem="er3-Bw-Rux" secondAttribute="bottom" constant="5" id="qo8-ST-qT6"/>
                             <constraint firstItem="Saw-g9-0D4" firstAttribute="trailing" secondItem="wT1-oF-fsX" secondAttribute="trailing" constant="50" id="u4G-6Z-4Xm"/>
                             <constraint firstItem="Oy4-oc-pPT" firstAttribute="leading" secondItem="Vw2-Gq-SbS" secondAttribute="leading" id="uUj-aN-Si2"/>
                             <constraint firstItem="ZBt-WV-nJB" firstAttribute="leading" secondItem="Saw-g9-0D4" secondAttribute="leading" id="wob-aA-a2r"/>
