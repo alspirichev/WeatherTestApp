@@ -13,8 +13,8 @@ class NetworkService {
     #warning("Add your API key")
     private let secretApiKey = ""
     
-    func weather(for city: String, completion: @escaping (Result<Weather, Error>) -> Void) {
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(secretApiKey)&units=metric"
+    func weather(for cityId: Int, completion: @escaping (Result<Weather, Error>) -> Void) {
+        let urlString = "https://api.openweathermap.org/data/2.5/weather?id=\(cityId)&appid=\(secretApiKey)&units=metric"
         
         guard let url = URL(string: urlString) else {
             completion(.failure(.badUrl))
