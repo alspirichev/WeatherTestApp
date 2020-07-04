@@ -149,7 +149,13 @@ extension CityTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let cityId = sections[indexPath.section].cities[indexPath.row].id
+        let cityId: Int
+        if isFiltering {
+            cityId = filteredCities[indexPath.row].id
+        } else {
+            cityId = sections[indexPath.section].cities[indexPath.row].id
+        }
+        
         performSegue(withIdentifier: weatherSegueIdentifier, sender: ["cityId": cityId])
     }
 }
