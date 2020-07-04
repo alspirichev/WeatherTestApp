@@ -20,21 +20,18 @@ class WeatherView: UIView {
     
     @IBOutlet weak private var weatherDescriptionLabel: UILabel!
     @IBOutlet weak private var temperatureLabel: UILabel!
+    @IBOutlet weak private var fahrenheitSwitch: UISwitch!
     
     private var temperature: Double!
     
-    // MARK: - Life cycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        cityLabel.text = ""
-        countryLabel.text = ""
-        commentLabel.text = ""
-        weatherDescriptionLabel.text = ""
-        temperatureLabel.text = ""
-    }
-    
+    // MARK: - IBActions
+
     @IBAction func convertToFahrenheit(_ sender: UISwitch) {
+        guard let _ = temperature else {
+            fahrenheitSwitch.isOn = false
+            return
+        }
+        
         switch sender.isOn {
             case true:
                 let fahrenheitTemperature = (temperature - 32) * 5 / 9
