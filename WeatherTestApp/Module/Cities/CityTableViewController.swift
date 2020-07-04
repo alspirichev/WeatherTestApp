@@ -24,9 +24,7 @@ class CityTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let cities = CityService()
-            .cities()
-            .filter { !$0.country.isEmpty }
+        let cities = CityService().cities()
         
         let groupedCities = Dictionary(grouping: cities) { $0.country.first! }
         let keys = groupedCities.keys.sorted()

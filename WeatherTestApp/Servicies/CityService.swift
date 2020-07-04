@@ -19,7 +19,9 @@ class CityService {
             let citiesData = try Data(contentsOf: URL(fileURLWithPath: citiesJSON), options: [])
             let cities = try JSONDecoder().decode([City].self, from: citiesData)
             
-            return cities
+            return Array(Set(cities))
+                .filter { !$0.country.isEmpty }
+            
         } catch {
             return [.defaultCity]
         }
