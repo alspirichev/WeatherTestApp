@@ -22,6 +22,7 @@ class WeatherView: UIView {
     @IBOutlet weak private var fahrenheitSwitch: UISwitch!
     
     private var temperature: Double!
+    private let duration = 0.25
     
     // MARK: - IBActions
 
@@ -33,11 +34,15 @@ class WeatherView: UIView {
         
         switch sender.isOn {
             case true:
+                // Fahrenheit to Celsius formula - https://www.rapidtables.com/convert/temperature/how-fahrenheit-to-celsius.html
                 let fahrenheitTemperature = (temperature - 32) * 5 / 9
-                temperatureLabel.text = String(format: NSLocalizedString("%.f℉", comment: ""), fahrenheitTemperature)
+                
+                animate(text: String(format: NSLocalizedString("%.f℉", comment: ""), fahrenheitTemperature),
+                        with: .transitionFlipFromLeft)
             
             case false:
-                temperatureLabel.text = String(format: "%.f°", temperature)
+                animate(text: String(format: "%.f°", temperature),
+                        with: .transitionFlipFromRight)
         }
     }
     
@@ -75,5 +80,16 @@ class WeatherView: UIView {
             
             default: break
         }
+    }
+    
+    // MARK: - Private methods
+    
+    private func animate(text: String, with options: UIView.AnimationOptions) {
+        UIView.transition(with: temperatureLabel,
+                          duration: duration,
+                          options: options,
+                          animations: { [weak self] in
+                            self?.temperatureLabel.text = text
+            }, completion: nil)
     }
 }
