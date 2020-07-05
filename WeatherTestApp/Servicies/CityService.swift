@@ -1,5 +1,5 @@
 //
-//  CityService.swift
+//  CityTests.swift
 //  WeatherTestApp
 //
 //  Created by Alexander Spirichev on 04.07.2020.
