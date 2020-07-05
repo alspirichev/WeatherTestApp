@@ -67,7 +67,7 @@ extension NetworkService {
                     return "Invalid data format"
                 
                 case .apiKeyIsMissing:
-                return "Insert your API key"
+                    return "Insert your API key"
             }
         }
     }

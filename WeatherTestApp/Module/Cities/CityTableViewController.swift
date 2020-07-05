@@ -16,6 +16,9 @@ class CityTableViewController: UITableViewController {
     
     private var allCities: [City]!
     private var sections: [Section] = []
+    
+    private let cityIdKey = "cityId"
+    private let cellIdentifier = "cityCell"
     private let weatherSegueIdentifier = "showWeather"
     
     private let searchController = UISearchController(searchResultsController: nil)
@@ -45,7 +48,7 @@ class CityTableViewController: UITableViewController {
             let weatherViewController = segue.destination as! WeatherViewController
             
             guard let senderInfo = sender as? [String: Int],
-                let cityId = senderInfo["cityId"] else {
+                let cityId = senderInfo[cityIdKey] else {
                 return
             }
             weatherViewController.cityId = cityId
@@ -78,7 +81,7 @@ class CityTableViewController: UITableViewController {
         definesPresentationContext = true
     }
     
-    private func filterContentForSearchText(_ searchText: String, city: City? = nil) {
+    private func filterContentForSearchText(_ searchText: String) {
         filteredCities = allCities.filter { city in
             city.name.lowercased().contains(searchText.lowercased())
         }
@@ -113,7 +116,7 @@ extension CityTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.accessoryType = .disclosureIndicator
 
         let city: City
@@ -156,6 +159,6 @@ extension CityTableViewController {
             cityId = sections[indexPath.section].cities[indexPath.row].id
         }
         
-        performSegue(withIdentifier: weatherSegueIdentifier, sender: ["cityId": cityId])
+        performSegue(withIdentifier: weatherSegueIdentifier, sender: [cityIdKey: cityId])
     }
 }
