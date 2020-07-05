@@ -16,35 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZBt-WV-nJB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw2-Gq-SbS">
-                                <rect key="frame" x="20" y="94" width="374" height="55"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="40"/>
+                                <rect key="frame" x="20" y="64" width="374" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLD-Ir-zUT">
-                                <rect key="frame" x="20" y="154" width="374" height="34.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <rect key="frame" x="20" y="110" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-oc-pPT">
-                                <rect key="frame" x="20" y="288.5" width="374" height="34.5"/>
+                                <rect key="frame" x="20" y="200.5" width="374" height="34.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Puo-Q2-7E4">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Puo-Q2-7E4">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-7S-cR6">
-                                <rect key="frame" x="20" y="673" width="374" height="169"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-7S-cR6">
+                                <rect key="frame" x="20" y="637" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-te-Cfw">
-                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="169"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="169"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er3-Bw-Rux">
                                                 <rect key="frame" x="0.0" y="0.0" width="137" height="41"/>
@@ -61,16 +59,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IUd-c2-yGV">
-                                        <rect key="frame" x="189.5" y="69" width="184.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="174" width="157" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJg-5o-7xp">
-                                                <rect key="frame" x="0.0" y="0.0" width="125.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="31"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M7i-Iu-9X7">
-                                                <rect key="frame" x="135.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="108" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="convertToFahrenheit:" destination="QaB-ig-xwC" eventType="valueChanged" id="1iK-Kd-PoH"/>
                                                 </connections>
@@ -82,31 +80,24 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Puo-Q2-7E4" firstAttribute="centerY" secondItem="ZBt-WV-nJB" secondAttribute="centerY" id="123-BZ-NLt"/>
                             <constraint firstItem="uLD-Ir-zUT" firstAttribute="centerX" secondItem="Saw-g9-0D4" secondAttribute="centerX" id="2CI-58-qdD"/>
                             <constraint firstItem="uLD-Ir-zUT" firstAttribute="trailing" secondItem="Vw2-Gq-SbS" secondAttribute="trailing" id="2Cl-JY-iSx"/>
-                            <constraint firstItem="Vw2-Gq-SbS" firstAttribute="top" secondItem="Saw-g9-0D4" secondAttribute="top" constant="50" id="3rP-h6-zBu"/>
+                            <constraint firstItem="Vw2-Gq-SbS" firstAttribute="top" secondItem="Saw-g9-0D4" secondAttribute="top" constant="20" id="3rP-h6-zBu"/>
                             <constraint firstItem="qdL-7S-cR6" firstAttribute="bottom" secondItem="Saw-g9-0D4" secondAttribute="bottom" constant="-20" id="A7B-Tr-tn8"/>
-                            <constraint firstItem="Saw-g9-0D4" firstAttribute="trailing" secondItem="ZBt-WV-nJB" secondAttribute="trailing" id="BhO-Fv-Gfi"/>
-                            <constraint firstItem="Puo-Q2-7E4" firstAttribute="centerX" secondItem="ZBt-WV-nJB" secondAttribute="centerX" id="F4V-Mc-Gh3"/>
                             <constraint firstItem="Saw-g9-0D4" firstAttribute="trailing" secondItem="qdL-7S-cR6" secondAttribute="trailing" constant="20" id="Izi-Cm-t4l"/>
-                            <constraint firstAttribute="bottom" secondItem="ZBt-WV-nJB" secondAttribute="bottom" id="M4t-fP-AA5"/>
                             <constraint firstItem="uLD-Ir-zUT" firstAttribute="top" secondItem="Vw2-Gq-SbS" secondAttribute="bottom" constant="5" id="NKD-fa-Eti"/>
                             <constraint firstItem="uLD-Ir-zUT" firstAttribute="leading" secondItem="Vw2-Gq-SbS" secondAttribute="leading" id="QUG-u7-32w"/>
                             <constraint firstItem="Vw2-Gq-SbS" firstAttribute="leading" secondItem="Saw-g9-0D4" secondAttribute="leading" constant="20" id="UEO-gB-jt3"/>
                             <constraint firstItem="Oy4-oc-pPT" firstAttribute="trailing" secondItem="Vw2-Gq-SbS" secondAttribute="trailing" id="WaE-yi-2PT"/>
                             <constraint firstItem="qdL-7S-cR6" firstAttribute="leading" secondItem="Saw-g9-0D4" secondAttribute="leading" constant="20" id="duO-Ni-yQf"/>
                             <constraint firstItem="Vw2-Gq-SbS" firstAttribute="centerX" secondItem="Saw-g9-0D4" secondAttribute="centerX" id="fFd-QQ-mmm"/>
-                            <constraint firstItem="ZBt-WV-nJB" firstAttribute="top" secondItem="QaB-ig-xwC" secondAttribute="top" id="m8B-qV-7Nc"/>
-                            <constraint firstItem="Oy4-oc-pPT" firstAttribute="top" secondItem="uLD-Ir-zUT" secondAttribute="bottom" constant="100" id="pV6-yQ-ytv"/>
+                            <constraint firstItem="Oy4-oc-pPT" firstAttribute="top" secondItem="uLD-Ir-zUT" secondAttribute="bottom" constant="70" id="pV6-yQ-ytv"/>
                             <constraint firstItem="Oy4-oc-pPT" firstAttribute="leading" secondItem="Vw2-Gq-SbS" secondAttribute="leading" id="uUj-aN-Si2"/>
-                            <constraint firstItem="ZBt-WV-nJB" firstAttribute="leading" secondItem="Saw-g9-0D4" secondAttribute="leading" id="wob-aA-a2r"/>
                             <constraint firstItem="Saw-g9-0D4" firstAttribute="trailing" secondItem="Vw2-Gq-SbS" secondAttribute="trailing" constant="20" id="yD4-lF-S2r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Saw-g9-0D4"/>
                         <connections>
                             <outlet property="activityIndicator" destination="Puo-Q2-7E4" id="4Kc-9j-ceY"/>
-                            <outlet property="cityImageView" destination="ZBt-WV-nJB" id="K5X-x8-9k6"/>
                             <outlet property="cityLabel" destination="Vw2-Gq-SbS" id="NBg-ab-cEE"/>
                             <outlet property="commentLabel" destination="Oy4-oc-pPT" id="INq-ow-JRm"/>
                             <outlet property="countryLabel" destination="uLD-Ir-zUT" id="mNB-AV-aQ1"/>

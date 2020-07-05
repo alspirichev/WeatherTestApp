@@ -15,7 +15,6 @@ class WeatherView: UIView {
     @IBOutlet weak private var countryLabel: UILabel!
     
     @IBOutlet weak private var commentLabel: UILabel!
-    @IBOutlet weak private var cityImageView: UIImageView!
     @IBOutlet weak private var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak private var weatherDescriptionLabel: UILabel!
